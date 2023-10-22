@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    background-color: darkslateblue;
+    list-style: none;
+}
+
+.navici {
+    width: 30%;
+}
+
+.navici:hover {
+    transform: scale(1.2);
+}
+
+.btn {
+    background-color: #313131;
+    border-radius: 20%;
+    margin: 10px;
+    width: 100%;
+}
+
+.btn1 {
+    background-color: bisque;
+    color: crimson;
+    transition: backround-color 5s, color 1s;
+}
+
+.btn1:hover {
+    background-color: darkred;
+    color: #000;
+}
+
+.menu {
+    background-color: rgb(226, 183, 118);
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    height: 3000px;
+    justify-content: start;
+    align-content: start;
+    flex-wrap: wrap;
+
+}
+
+.menuitem1 {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    padding: 3%;
+    width: 33%;
+}
+
+#tommy {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuitem2 {
+    width: calc(100% - 33%);
+}
+
+.menuitem2 img {
+    position: relative;
+    width: 100%;
+    animation-name: vicecity;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    transition-timing-function: ease-out;
+}
+
+@keyframes vicecity {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+.menuitem3 {
+    padding: 15px;
+    width: 50%;
+    height;
+    50%;
+}
+
+.menuitem4 {
+    padding: 15px;
+    width: 50%;
+    height;
+    50%;
+}
