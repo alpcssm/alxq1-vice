@@ -42,7 +42,7 @@
 .menu {
     background-color: rgb(226, 183, 118);
     display: flex;
-    padding: 20px;
+    padding: 1%;
     width: 100%;
     height: 3000px;
     justify-content: start;
@@ -57,13 +57,9 @@
     grid-template-rows: 3;
     padding: 3%;
     width: 33%;
+    text-align: center;
 }
 
-#tommy {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-}
 
 .menuitem2 {
     width: calc(100% - 33%);
@@ -90,14 +86,80 @@
 
 .menuitem3 {
     padding: 15px;
-    width: 50%;
-    height;
-    50%;
+    width: 100%;
+}
+
+.menuitem3 img {
+    position: relative;
+    width: 75%;
+    animation-name: vicecity2;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    transition-timing-function: ease-out;
+    display: flex;
+    left: 12.5%;
+    align-content: center;
+    justify-content: center;
+}
+
+@keyframes vicecity2 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 12.5%;
+    }
 }
 
 .menuitem4 {
-    padding: 15px;
-    width: 50%;
-    height;
-    50%;
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: chocolate;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* alt tabaka */
+.menuitem4-i {
+    display: flex;
+    width: 33%;
+    padding: 2%;
+    margin: 1%;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    body {
+        font-size: 90%;
+    }
+
+    .btn1 {
+        font-size: 80%;
+    }
 }
