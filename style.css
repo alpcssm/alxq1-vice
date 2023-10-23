@@ -30,7 +30,7 @@
 
 .btn1 {
     color: crimson;
-    transition: backround-color 5s, color 1s,;
+    transition: backround-color 5s, color 1s, ;
 }
 
 .btn1:hover {
@@ -113,28 +113,32 @@
 
 @keyframes rotate {
     from {
-      transform: rotate(-5deg); /* Başlangıç açısı: 0 derece */
+        transform: rotate(-5deg);
+        /* Başlangıç açısı: 0 derece */
     }
+
     to {
-      transform: rotate(5deg); /* Bitiş açısı: 360 derece (bir tur) */
+        transform: rotate(5deg);
+        /* Bitiş açısı: 360 derece (bir tur) */
     }
-  }
+}
 
 
 .menuitem4 {
-    background-image:url(https://cdn2.unrealengine.com/egs-grandtheftautovicecitythedefinitiveedition-rockstargames-g1a-00-1920x1080-a93053f8548a.jpg);
+    background-image: url(https://cdn2.unrealengine.com/egs-grandtheftautovicecitythedefinitiveedition-rockstargames-g1a-00-1920x1080-a93053f8548a.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     background-color: chocolate;
     align-items: center;
     justify-content: space-evenly;
+    height: 100vh;
 }
 
 /* alt tabaka */
 .menuitem4-i {
     display: flex;
-    width: 50%;
+    width: 45%;
     padding: 2%;
     margin: 1%;
     align-items: center;
@@ -158,6 +162,7 @@
 
     width: 100%;
 }
+
 .buy1 {
     width: 44%;
     order: 1;
@@ -213,13 +218,60 @@
     .btn1 {
         font-size: 80%;
     }
+    .menuitem4-i img {
+        width: 60%;
+    }
+
     .menuitem5 {
         flex-direction: column;
     }
+
     .buy2 {
         order: 1;
     }
+
     .buy1 {
         order: 2;
+    }
+}
+
+@media (max-width:830px) {
+    body {
+        font-size: 70%;
+    }
+    .menuitem4-i img {
+        width: 50%;
+    }
+
+    .btn1 {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:730px) {
+    body {
+        font-size: 70%;
+    }
+
+    .btn1 {
+        font-size: 70%;
+    }
+
+    .menuitem5 {
+        flex-direction: column;
+    }
+
+    .menuitem4-i img {
+        width: 50%;
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        font-size: 50%;
+    }
+
+    .btn1 {
+        font-size: 50%;
     }
 }
