@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(6, 1fr);
-    place-items: center;
-    background-color: darkslateblue;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #af1a71;
     list-style: none;
+    align-items: center;
+    justify-items: center;
 }
 
 .navici {
@@ -24,26 +26,53 @@
 
 .btn {
     border-radius: 20%;
-    margin: 10px;
-    width: 100%;
-}
-
-.btn1 {
-    color: crimson;
-    transition: backround-color 5s, color 1s, ;
-}
-
-.btn1:hover {
+    padding: 25%;
     background-color: transparent;
-    color: #5f3b3b;
+    color: white;
+    transition: backround-color 5s, color 1s;
+    border: 1px solid snow;
+}
+
+.kayıtbtn {
+    border-radius: 20%;
+    padding: 25%;
+    background-color: transparent;
+    color: white;
+    transition: backround-color 5s, color 1s;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid snow;
+    border-radius: 0%;
+}
+
+
+.btn:hover {
+    color: white;
+    border-bottom: 5px solid #FFC8BD;
+}
+
+.kayıtbtn:hover {
+    color: var(--backround-color);
+    background-color: wheat;
+    border-bottom: 5px solid grey;
+}
+
+
+#buybutton {
+    display: flex;
+    background-color: yellow;
+    margin: 5% auto;
+    text-align: center;
+    height: 50px;
+    text-decoration: none;
 }
 
 .menu {
-    background-color: rgb(226, 183, 118);
+    background: linear-gradient(45deg, #EEEEEE, #b4b2db, #F25292, #FEA096);
     display: flex;
     padding: 1%;
     width: 100%;
-    height: 3000px;
     justify-content: start;
     align-content: start;
     flex-wrap: wrap;
@@ -132,7 +161,7 @@
     background-color: chocolate;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 700px;
 }
 
 /* alt tabaka */
@@ -168,6 +197,12 @@
     order: 1;
 }
 
+.buy1 img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
 .buy2 {
     padding: 5%;
     width: calc(100% - 44%);
@@ -180,36 +215,45 @@
 
 #pegi {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    place-items: center;
+    grid-template-columns: repeat(2, 5%);
+    justify-content: center;
 }
 
 #pegi18 {
-    width: 15%;
+    width: 100%;
+}
+
+.pcps5 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 10%);
+    justify-content: center;
 }
 
 
+.css-1vemnlb {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
 
+.pcps5 button:hover {
+    box-shadow: 0px 13px 15px rgba(184, 28, 28, 0.966);
+}
 
+.footer {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background: linear-gradient(15deg, rgb(85, 42, 42), #F25292, #FEA096);
+}
 
+#foter {
+    list-style-type: none;
+    align-content: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/** media queries */
 @media (max-width:1030px) {
     body {
         font-size: 90%;
@@ -218,6 +262,7 @@
     .btn1 {
         font-size: 80%;
     }
+
     .menuitem4-i img {
         width: 60%;
     }
@@ -233,12 +278,17 @@
     .buy1 {
         order: 2;
     }
+
+    .menuitem4-i {
+        color: whitesmoke
+    }
 }
 
 @media (max-width:830px) {
     body {
         font-size: 70%;
     }
+
     .menuitem4-i img {
         width: 50%;
     }
