@@ -153,19 +153,19 @@ body {
 }
 
 .menuitem3 {
-  padding: 15px;
+  padding: 1px;
   width: 100%;
 }
 
 .menuitem3 img {
   position: relative;
-  width: 75%;
+  width: 100%;
   animation-name: vicecity2;
   animation-duration: 10s;
   animation-direction: alternate;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in;
   display: flex;
-  left: 12.5%;
+  left: 0%;
   align-content: center;
   justify-content: center;
 }
@@ -176,7 +176,7 @@ body {
   }
 
   to {
-    left: 12.5%;
+    left: 0%;
   }
 }
 
@@ -334,6 +334,9 @@ body {
   .menuitem4-i img {
     width: 50%;
   }
+  .navici {
+    width: 50%;
+  }
 }
 
 @media (max-width: 730px) {
@@ -344,10 +347,50 @@ body {
   .menuitem5 {
     flex-direction: column;
   }
+  .navici {
+    width: 50%;
+  }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 576px) {
   body {
     font-size: 50%;
+  }
+  .menuitem1 {
+    width: 100%;
+  }
+  .menuitem2 {
+    order: -1;
+    width: 100%;
+  }
+  .btn {
+    font-size: 7px;
+  }
+  .menuitem3 {
+    width: 100%;
+  }
+  .menuitem4 {
+    height: 100%;
+  }
+  .menuitem4-i {
+    width: 100%;
+  }
+  .css-1vemnlb {
+    width: 50%;
+  }
+  #buybutton {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 40%;
+  }
+  .btn {
+    font-size: 5px;
+  }
+  .css-1vemnlb {
+    height: 50%;
   }
 }
