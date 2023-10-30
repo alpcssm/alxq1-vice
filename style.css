@@ -1,327 +1,353 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
 }
 
 .nav {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    background-color: #af1a71;
-    list-style: none;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #af1a71;
+  list-style: none;
+  align-items: center;
+  justify-items: center;
+}
+
+/* * log kısmı */
+.logmain {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logmaini {
+  width: 50%;
+}
+
+.logform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b4b2db;
+}
+.logform div {
+  margin-top: 15px;
+}
+.logform div input {
+  border: 1px solid red;
+  padding: 10% 0;
+  text-align: center;
+}
+.logform div button {
+  border: 1px solid red;
+  padding: 25px 0;
+  width: 100px;
+  background: rgba(36, 148, 36, 0.486);
+  text-decoration: none;
+  color: white;
 }
 
 .navici {
-    width: 30%;
-    transition: transform 2s;
+  width: 30%;
+  transition: transform 2s;
 }
 
 .navici:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .btn {
-    border-radius: 20%;
-    padding: 25%;
-    background-color: transparent;
-    color: white;
-    transition: backround-color 5s, color 1s;
-    border: 1px solid snow;
+  border-radius: 20%;
+  padding: 25%;
+  background-color: transparent;
+  color: white;
+  transition: backround-color 5s, color 1s;
+  border: 1px solid snow;
 }
 
 .kayıtbtn {
-    border-radius: 20%;
-    padding: 25%;
-    background-color: transparent;
-    color: white;
-    transition: backround-color 5s, color 1s;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid snow;
-    border-radius: 0%;
+  border-radius: 20%;
+  padding: 25%;
+  background-color: transparent;
+  color: white;
+  transition: backround-color 5s, color 1s;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid snow;
+  border-radius: 0%;
 }
 
-
 .btn:hover {
-    color: white;
-    border-bottom: 5px solid #FFC8BD;
+  color: white;
+  border-bottom: 5px solid #ffc8bd;
 }
 
 .kayıtbtn:hover {
-    color: var(--backround-color);
-    background-color: wheat;
-    border-bottom: 5px solid grey;
+  color: var(--backround-color);
+  background-color: wheat;
+  border-bottom: 5px solid grey;
 }
 
-
 #buybutton {
-    display: flex;
-    background-color: yellow;
-    margin: 5% auto;
-    text-align: center;
-    height: 50px;
-    text-decoration: none;
+  display: flex;
+  background-color: yellow;
+  margin: 5% auto;
+  text-align: center;
+  height: 50px;
+  text-decoration: none;
 }
 
 .menu {
-    background: linear-gradient(45deg, #EEEEEE, #b4b2db, #F25292, #FEA096);
-    display: flex;
-    padding: 1%;
-    width: 100%;
-    justify-content: start;
-    align-content: start;
-    flex-wrap: wrap;
+  display: flex;
+  padding: 1%;
+  width: 100%;
+  justify-content: start;
+  align-content: start;
+  flex-wrap: wrap;
+}
 
+.bggradient {
+  background: linear-gradient(45deg, #eeeeee, #b4b2db, #f25292, #fea096);
 }
 
 .menuitem1 {
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 3;
-    padding: 3%;
-    width: 33%;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+  padding: 3%;
+  width: 33%;
+  text-align: center;
 }
 
-
 .menuitem2 {
-    width: calc(100% - 33%);
+  width: calc(100% - 33%);
 }
 
 .menuitem2 img {
-    position: relative;
-    width: 100%;
-    animation-name: vicecity;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    transition-timing-function: ease-out;
+  position: relative;
+  width: 100%;
+  animation-name: vicecity;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  transition-timing-function: ease-out;
 }
 
 @keyframes vicecity {
-    from {
-        top: -100%;
-    }
+  from {
+    top: -100%;
+  }
 
-    to {
-        top: 0;
-    }
+  to {
+    top: 0;
+  }
 }
 
 .menuitem3 {
-    padding: 15px;
-    width: 100%;
+  padding: 15px;
+  width: 100%;
 }
 
 .menuitem3 img {
-    position: relative;
-    width: 75%;
-    animation-name: vicecity2;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    transition-timing-function: ease-out;
-    display: flex;
-    left: 12.5%;
-    align-content: center;
-    justify-content: center;
+  position: relative;
+  width: 75%;
+  animation-name: vicecity2;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  transition-timing-function: ease-out;
+  display: flex;
+  left: 12.5%;
+  align-content: center;
+  justify-content: center;
 }
 
 @keyframes vicecity2 {
-    from {
-        left: -100%;
-    }
+  from {
+    left: -100%;
+  }
 
-    to {
-        left: 12.5%;
-    }
+  to {
+    left: 12.5%;
+  }
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(-5deg);
-        /* Başlangıç açısı: 0 derece */
-    }
+  from {
+    transform: rotate(-5deg);
+    /* Başlangıç açısı: 0 derece */
+  }
 
-    to {
-        transform: rotate(5deg);
-        /* Bitiş açısı: 360 derece (bir tur) */
-    }
+  to {
+    transform: rotate(5deg);
+    /* Bitiş açısı: 360 derece (bir tur) */
+  }
 }
 
-
 .menuitem4 {
-    background-image: url(https://cdn2.unrealengine.com/egs-grandtheftautovicecitythedefinitiveedition-rockstargames-g1a-00-1920x1080-a93053f8548a.jpg);
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: chocolate;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 700px;
+  background-image: url(https://cdn2.unrealengine.com/egs-grandtheftautovicecitythedefinitiveedition-rockstargames-g1a-00-1920x1080-a93053f8548a.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: chocolate;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 700px;
 }
 
 /* alt tabaka */
 .menuitem4-i {
-    display: flex;
-    width: 45%;
-    padding: 2%;
-    margin: 1%;
-    align-items: center;
-    animation: rotate 7s infinite;
-    animation-direction: alternate;
+  display: flex;
+  width: 45%;
+  padding: 2%;
+  margin: 1%;
+  align-items: center;
+  animation: rotate 7s infinite;
+  animation-direction: alternate;
 }
 
 .menuitem4-i:hover {
-    scale: 1.2;
+  scale: 1.2;
 }
-
 
 /** buy menu */
 .menuitem5 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: space-evenly;
-
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .buy1 {
-    width: 44%;
-    order: 1;
+  width: 44%;
+  order: 1;
 }
 
 .buy1 img {
-    display: block;
-    margin: auto;
-    width: 50%;
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 .buy2 {
-    padding: 5%;
-    width: calc(100% - 44%);
-    order: 2;
+  padding: 5%;
+  width: calc(100% - 44%);
+  order: 2;
 }
 
 #buy2img {
-    width: 100%;
+  width: 100%;
 }
 
 #pegi {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(2, 5%);
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 5%);
+  justify-content: center;
 }
 
 #pegi18 {
-    width: 100%;
+  width: 100%;
 }
 
 .pcps5 {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(4, 10%);
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 10%);
+  justify-content: center;
 }
 
-
 .css-1vemnlb {
-    background-color: whitesmoke;
-    cursor: pointer;
+  background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .pcps5 button:hover {
-    box-shadow: 0px 13px 15px rgba(184, 28, 28, 0.966);
+  box-shadow: 0px 13px 15px rgba(184, 28, 28, 0.966);
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    background: linear-gradient(15deg, rgb(85, 42, 42), #F25292, #FEA096);
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  background: linear-gradient(15deg, rgb(85, 42, 42), #f25292, #fea096);
 }
 
 #foter {
-    list-style-type: none;
-    align-content: center;
+  list-style-type: none;
+  align-content: center;
 }
 
 /** media queries */
-@media (max-width:1030px) {
-    body {
-        font-size: 90%;
-    }
+@media (max-width: 1030px) {
+  body {
+    font-size: 90%;
+  }
 
-    .btn1 {
-        font-size: 80%;
-    }
+  .menuitem4-i img {
+    width: 60%;
+  }
 
-    .menuitem4-i img {
-        width: 60%;
-    }
+  .menuitem5 {
+    flex-direction: column;
+  }
 
-    .menuitem5 {
-        flex-direction: column;
-    }
+  .buy2 {
+    order: 1;
+  }
 
-    .buy2 {
-        order: 1;
-    }
+  .buy1 {
+    order: 2;
+  }
 
-    .buy1 {
-        order: 2;
-    }
-
-    .menuitem4-i {
-        color: whitesmoke
-    }
+  .menuitem4-i {
+    color: whitesmoke;
+  }
 }
 
-@media (max-width:830px) {
-    body {
-        font-size: 70%;
-    }
+@media (max-width: 1250px) {
+  body {
+    font-size: 80%;
+  }
 
-    .menuitem4-i img {
-        width: 50%;
-    }
-
-    .btn1 {
-        font-size: 60%;
-    }
+  .menuitem4-i img {
+    width: 50%;
+  }
 }
 
-@media (max-width:730px) {
-    body {
-        font-size: 70%;
-    }
+@media (max-width: 830px) {
+  body {
+    font-size: 70%;
+  }
 
-    .btn1 {
-        font-size: 70%;
-    }
-
-    .menuitem5 {
-        flex-direction: column;
-    }
-
-    .menuitem4-i img {
-        width: 50%;
-    }
+  .menuitem4-i img {
+    width: 50%;
+  }
 }
 
-@media (max-width:500px) {
-    body {
-        font-size: 50%;
-    }
+@media (max-width: 730px) {
+  body {
+    font-size: 70%;
+  }
 
-    .btn1 {
-        font-size: 50%;
-    }
+  .menuitem5 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 570px) {
+  body {
+    font-size: 50%;
+  }
 }
