@@ -375,11 +375,12 @@ body {
   .menuitem4-i {
     width: 100%;
   }
-  .css-1vemnlb {
-    width: 50%;
-  }
+
   #buybutton {
     font-size: 10px;
+  }
+  .pcps5 {
+    grid-template-columns: repeat(4, 15%);
   }
 }
 
@@ -390,7 +391,7 @@ body {
   .btn {
     font-size: 5px;
   }
-  .css-1vemnlb {
-    height: 50%;
+  .pcps5 {
+    grid-template-columns: repeat(4, 30%);
   }
 }
